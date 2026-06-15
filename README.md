@@ -28,3 +28,5 @@ Every article should include:
 - links to related projects when relevant
 - honest limitations
 - next steps
+
+Use [docs/PUBLISHING_CHECKLIST.md](docs/PUBLISHING_CHECKLIST.md) before publishing or pinning a post.
