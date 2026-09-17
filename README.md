@@ -16,6 +16,7 @@ docs/
 
 ## Published Drafts
 
+- [Making model quality gates control the serving path](content/artifact-serving-and-quality-gates.md)
 - [Vertex Generative AI Overview](content/vertex-generative-ai-overview.md)
 - [Building an AI/MLOps Portfolio](content/building-an-ai-mlops-portfolio.md)
 
@@ -30,3 +31,7 @@ Every article should include:
 - next steps
 
 Use [docs/PUBLISHING_CHECKLIST.md](docs/PUBLISHING_CHECKLIST.md) before publishing or pinning a post.
+
+Articles are versioned writing drafts. `make verify` checks whitespace; it does not
+execute the linked projects or validate external service behavior. Engineering
+claims should link to the code and tests that demonstrate them.
