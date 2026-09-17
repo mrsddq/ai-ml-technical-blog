@@ -1,39 +1,18 @@
-﻿# Engineering Runbook
+# Technical writing runbook
 
-## Repository Profile
+This repository contains Markdown articles and drafts. It has no deployed blog
+service or application test suite.
 
-- Repository: $repoName
-- Classification: Documentation/content repository
-- Tracked files: 5
-- Python files: 0
-- JavaScript/TypeScript files: 0
-- Notebooks: 0
-- Terraform files: 0
+## Review an article
 
-## Setup
+1. Start with the article index in the [README](../README.md).
+2. Check commands and engineering claims against the linked source repository.
+3. State whether evidence comes from a test, a deployment or a measured experiment.
+4. Follow the [publishing checklist](PUBLISHING_CHECKLIST.md).
 
-``bash
-No package install step is required for the tracked source.
-``
+```bash
+make verify
+```
 
-## Verification
-
-``bash
-Review tracked content and run repository-specific checks.
-git status --short
-``
-
-## Release Hygiene
-
-- Keep generated outputs, caches, local datasets, virtual environments, and dependency folders out of git.
-- Prefer deterministic commands over manual notebook or console-only steps.
-- Document required secrets and environment variables instead of committing them.
-- Keep Dockerfiles, CI workflows, and tests aligned with the actual project stack.
-- Treat learning or reference material honestly as reference material; do not present it as production service code unless it has service-grade tests, deployment, and operations docs.
-
-## Maintenance Checklist
-
-- Review dependencies quarterly.
-- Run tests before every push.
-- Confirm git status --short is clean before packaging.
-- Include .git only when an external submission explicitly requires repository history.
+This checks whitespace in the working diff. It does not execute article commands
+or validate external websites. Publication through a hosting service is separate.
