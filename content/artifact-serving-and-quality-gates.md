@@ -72,8 +72,12 @@ is tested; a full cluster execution still needs configured storage and credentia
 ## Reproduce and inspect
 
 See [Rental Price MLOps Pipeline](https://github.com/mrsddq/rental-price-mlops-pipeline),
-especially `rental_mlops/artifacts.py`, `quality.py`, `serving.py`,
-`tests/test_numeric_boundaries.py`, and `tests/test_serving_artifact.py`.
+especially [`artifacts.py`](https://github.com/mrsddq/rental-price-mlops-pipeline/blob/main/rental_mlops/artifacts.py),
+[`quality.py`](https://github.com/mrsddq/rental-price-mlops-pipeline/blob/main/rental_mlops/quality.py),
+[`serving.py`](https://github.com/mrsddq/rental-price-mlops-pipeline/blob/main/rental_mlops/serving.py),
+[`test_numeric_boundaries.py`](https://github.com/mrsddq/rental-price-mlops-pipeline/blob/main/tests/test_numeric_boundaries.py),
+and [`test_serving_artifact.py`](https://github.com/mrsddq/rental-price-mlops-pipeline/blob/main/tests/test_serving_artifact.py).
+Run the following commands from the root of that repository:
 
 ```bash
 python -m venv .venv
