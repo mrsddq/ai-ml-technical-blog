@@ -1,7 +1,5 @@
-﻿.PHONY: verify clean
+.PHONY: verify
 
+# Documentation hygiene only; this does not validate research results.
 verify:
-	git status --short
-
-clean:
-	git status --short
+	git diff --check
